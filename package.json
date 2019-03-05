@@ -1,0 +1,43 @@
+{
+  "name": "s29launcher",
+  "version": "1.0.1",
+  "description": "Studio 29™ Minecraft launcher",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "npm run launcher",
+    "launcher": "\"bin\\launcher-build\"",
+    "watch-launcher": "nodemon --watch src\\templates --ext launcher --exec \"bin\\launcher-build\"",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "app.themcbox",
+    "mac": {
+      "category": "your.app.category.type"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stwentynine/S29Launcher.git"
+  },
+  "keywords": [
+    "minecraft"
+  ],
+  "author": "Studio 29™",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stwentynine/S29Launcher/issues"
+  },
+  "homepage": "https://github.com/stwentynine/S29Launcher#readme",
+  "dependencies": {
+    "electron-store": "^2.0.0",
+    "jquery": "^3.3.1",
+    "nodemon": "^1.18.10",
+    "semantic-ui": "^2.4.2"
+  },
+  "devDependencies": {
+    "electron": "^4.0.7",
+    "electron-builder": "^20.38.5"
+  }
+}
